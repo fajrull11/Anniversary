@@ -16,12 +16,15 @@
     <link rel="stylesheet" href="https://files.dariku.my.id/dk202/style.css" />
     <title>Spesial Buat Kamu</title>
   </head>
+
   <body>
-    <div class="preload"><p>Loading dulu . . .</p></div>
+    <div class="preload">
+      <p>Loading dulu ya bee, hehe . . .</p>
+    </div>
     <div class="open">
       <div>
         <div class="lope" onclick="ilang()"><i class="love material-icons-sharp"> favorite </i></div>
-        <h3>Pencet Love nya</h3>
+        <h3>Pencet Love nya dong bee 🤗</h3>
       </div>
     </div>
     <div class="bg">
@@ -94,44 +97,48 @@
       // ========================
 
       // Musik
-      musik = "https://ini.dariku.my.id/contohultah/musik.mp3";
+      musik = "https://ini.dariku.my.id/mahahessa/audio.mp3";
 
       // Daftar Foto
-      background1 = "file foto";
-      background2 = "file foto";
-      background3 = "file foto";
-      background4 = "file foto";
-      background5 = "file foto";
-      background6 = "file foto";
+      background1 = "poto1.jpeg";
+      background2 = "poto2.jpeg";
+      background3 = "poto3.jpeg";
+      background4 = "poto4.jpeg";
+      background5 = "poto5.jpeg";
+      background6 = "poto6.jpeg";
 
       // Ucapan Slide 1
-      ucapan1 = "Contoh ucapan";
+      ucapan1 =
+        "Happy 1st Anniversary sayangkuuh cintakoeh 💕. Tepat di tanggal 24 bulan Mei 2023 Aku nyatain perasaan Aku ke Kamu. Ini Kita pertama kali ketemuan secara langsung buat nonton GOTG, walaupun Kamu agak cewa karena aku ga nawarin makan😄. Aku seneng bangett akhirnya Kamu mau diajak jalan dan mama Kamu bolehin Aku jemput (padahal belum kenal sama sekali)";
 
       // Ucapan Slide 2 / Pilihan Kado
-      ucapan2 = "Ada kado buat kamu, pilih satu ya";
-      kado1 = "Selamat kamu dapet kado 1";
-      kado2 = "Selamat kamu dapet kado 2";
-      kado3 = "Selamat kamu dapet kado 3";
-      kado4 = "Selamat kamu dapet kado 4";
+      ucapan2 =
+        "Saat pertama Aku tau Kamu, Aku tertarik sama Kamu karena kuereen pol main biolanya, di foto ini momen Aku nemenin kamu latihan biola di tempat guru Kamu. Aku seneng akhirnya bisa liat proses Kamu latihan. Sebelum lanjut, pilih kado dulu yaa Sitii🤭";
+      kado1 = "Selamat, 1 hari Arul akan meng-'Iya'kan permintaan Kamu!";
+      kado2 = "Selamat, Arul traktir Kamu Es krim🍦!";
+      kado3 = "Selamat, Kamu akan checkout 3 barang di keranjang olshop Kamu!";
+      kado4 = "Selamat, Arul traktir kamu Sushi!";
 
       // Ucapan Slide 3
-      ucapan3 = "Contoh ucapan";
+      ucapan3 =
+        "Di sini momen Kamu dirawat inap di rumah sakit🤒, Aku sedih banget liat Kamu sakit ditambah lagi Kamu tetep ngerjain tugas kuliah yang bertumpuk itu, sampe-sampe Kamu nangis di RS. Di sisi lain aku senang karena bisa ikut ngerawat Kamu waktu sakit dan juga bantu Kamu ngerjain tugas kuliah. Tapi yang paling bikin Aku senang adalah ketika Kamu akhirnya sembuh dari Sakit😁";
 
       // Ucapan Slide 4
-      ucapan4 = "Contoh ucapan";
+      ucapan4 = "Ini momen pertama kali Aku nontonin Kamu tampil main biola di acara gedeee, pokoknya Kamu kuereenn bangettlah bee👍🏼👍🏼👍🏼";
 
       // Ucapan Slide 5
-      ucapan5 = "Contoh ucapan";
+      ucapan5 = "Ini momen pertama kali kita naik kereta bareng ke Linggau buat dateng ke acara nikahan sepupu Aku, dan... Kamu juga ikut ngisi acaraa di sanaaa! speechless dah, keren bingitts.";
 
       // Ucapan Slide 6
-      ucapan6 = "Isi wish kamu disini ya";
+      ucapan6 =
+        "Aku sangat menantikan lebih banyak perjalanan hidup bersama Kamu di masa mendatang bee, I'm so glad to meet You, have You by my side this whole time. I Love Youu so so Much Syah🩷🩷🩷   Nah kalo yang ini, Kamu aja yang ceritain ke Aku yaah😁 Tulis di bawah ini👇🏻";
 
       // Watermark
       tag = "";
 
       // Pop up setelah kado
       async function setelahKado(inijanganhapus) {
-        await swalo.fire({ title: "Lanjut gak nihh", confirmButtonText: "Lanjuttt" });
+        await swalo.fire({ title: "Lanjutt gak nih bee?", confirmButtonText: "Lanjuttt bee!" });
 
         inijanganhapus();
       }
@@ -140,7 +147,7 @@
       async function sendwish() {
         pesanku = valuewish.value;
         if (pesanku) {
-          await swalo.fire({ confirmButtonText: "OK", title: "Kirim ke wa aku ya" });
+          await swalo.fire({ confirmButtonText: "OK", title: "Kirim ke wa aku ya bee😉" });
           location.assign(`https://wa.me/?text=${pesanku}`);
         } else {
           await swalo.fire({ confirmButtonText: "OK", title: "Jangan dikosongin dong" });
